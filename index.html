@@ -1,62 +1,49 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <meta charset="UTF-8">
-  <title>个人成果展示</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>王嘉欣个人网站</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <h1>个人科研成果</h1>
-  <p>展示我的研究工作与支撑材料</p>
-</header>
+<!-- ✅ 第一块：自我介绍 -->
+<section id="hero">
+  <div class="hero-content">
+    <h1>王嘉欣</h1>
+    <p class="subtitle">采矿工程 · 硕士研究生</p>
 
-<section id="portfolio">
+    <p class="desc">
+      研究方向：边坡失稳预测、PI-LSTM物理信息神经网络建模
+    </p>
 
-  <!-- 成果1 -->
-  <div class="card">
-    <img src="img/demo1.png" onclick="openImg(this)">
-    
-    <div class="content">
-      <h3>边坡预测模型（PI-LSTM）</h3>
-      <p>
-        基于雷达监测数据，结合Voight幂律约束，实现边坡失稳预测与TTF分析。
-      </p>
-
-      <div class="buttons">
-        <a href="img/demo1.png" target="_blank">查看大图</a>
-        <a href="pdf/report1.pdf" target="_blank">查看PDF</a>
-      </div>
+    <div class="hero-buttons">
+      <a href="#portfolio">查看成果</a>
+      <a href="pdf/cv.pdf" target="_blank">个人简历</a>
     </div>
   </div>
+</section>
 
-  <!-- 成果2 -->
-  <div class="card">
-    <img src="img/demo2.png" onclick="openImg(this)">
-    
+<!-- ✅ 第二块：成果展示 -->
+<section id="portfolio">
+  <h2>个人成果展示</h2>
+
+  <div class="item">
+    <img src="img/demo1.png" alt="成果图">
+
     <div class="content">
-      <h3>机柜CFD温度场模拟</h3>
-      <p>
-        基于ANSYS Icepak进行机柜级热环境模拟，分析气流组织与温度分布。
-      </p>
+      <h3>PI-LSTM边坡预测</h3>
+      <p>基于雷达监测数据，结合Voight幂律，实现边坡失稳预测与TTF计算。</p>
 
       <div class="buttons">
-        <a href="img/demo2.png" target="_blank">查看大图</a>
-        <a href="pdf/report2.pdf" target="_blank">查看PDF</a>
+        <a href="img/demo1.png" target="_blank">查看图片</a>
+        <a href="pdf/report1.pdf" target="_blank">查看PDF</a>
       </div>
     </div>
   </div>
 
 </section>
 
-<footer>
-  <p>© 2026 个人主页</p>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
