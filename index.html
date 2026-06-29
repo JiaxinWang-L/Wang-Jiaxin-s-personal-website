@@ -1,84 +1,34 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>王嘉欣个人网站</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&#29579;&#22025;&#27427;&#20010;&#20154;&#32593;&#31449;</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <section id="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Mining Engineering</p>
+      <h1>Hello, &#25105;&#26159;&#29579;&#22025;&#27427;</h1>
+      <p class="subtitle">&#19996;&#21271;&#22823;&#23398;&#37319;&#30719;&#24037;&#31243;&#30805;&#22763;&#30740;&#31350;&#29983;</p>
 
-<!-- ✅ 第一块：自我介绍 -->
-<section id="hero">
-  <div class="hero-content">
-    <h1>Hello </h1>
-    <h1>我是王嘉欣，感谢您的访问</h1>
-    <p class="subtitle">我现在是东北大学采矿工程的一名硕士研究生</p>
-
-    <p class="desc">
-      我来自江西省宜春市奉新县
-      性别：男 
-    </p>
-    <p class="desc">
-      我的研究方向：边坡失稳预测、PI-LSTM物理信息神经网络建模
-    </p>
-     <p class="desc">
-      如果你有任何问题请联系我：我的电话号码是18720517501
-    </p>
-    <details>
-    <summary>点击查看个人简历</summary>
-        <iframe 
-            src="resume.pdf" 
-            width="100%" 
-            height="600px">
-        </iframe>
-    </details>
-  </div>
-</section>
-
-<!-- ✅ 第二块：成果展示 -->
-<section id="portfolio">
-  <h2>这是我的个人成果展示</h2>
-
-  <!-- 本科 -->
-  <details>
-    <summary>点击查看本科阶段成果</summary>
-    <iframe 
-      src="https://JiaxinWang-L.github.io/Wang-Jiaxin-s-personal-website/PDF/01.pdf" 
-      width="100%" 
-      height="600px">
-    </iframe>
-  </details>
-
-  <!-- 硕士 -->
-  <details>
-    <summary>点击查看硕士阶段成果</summary>
-    <iframe 
-      src="https://JiaxinWang-L.github.io/Wang-Jiaxin-s-personal-website/PDF/MASTER.pdf" 
-      width="100%" 
-      height="600px">
-    </iframe>
-  </details>
-
-  <!-- 下载按钮 -->
-  <div class="content">
-    <h3>下载查看</h3>
-
-    <div class="buttons">
-      <a href="https://raw.githubusercontent.com/JiaxinWang-L/Wang-Jiaxin-s-personal-website/main/PDF/01.pdf" target="_blank">
-        本科PDF
-      </a>
+      <p class="desc">
+        &#25105;&#26469;&#33258;&#27743;&#35199;&#30465;&#23452;&#26149;&#24066;&#22857;&#26032;&#21439;&#65292;&#30740;&#31350;&#26041;&#21521;&#20026;&#36793;&#22369;&#22833;&#31283;&#39044;&#27979;&#12289;PI-LSTM &#29289;&#29702;&#20449;&#24687;&#31070;&#32463;&#32593;&#32476;&#24314;&#27169;&#12290;
+      </p>
+      <p class="desc">
+        &#22914;&#26377;&#20219;&#20309;&#38382;&#39064;&#65292;&#27426;&#36814;&#32852;&#31995;&#25105;&#65306;18720517501
+      </p>
     </div>
+  </section>
 
-    <div class="buttons">
-      <a href="https://raw.githubusercontent.com/JiaxinWang-L/Wang-Jiaxin-s-personal-website/main/PDF/MASTER.pdf" target="_blank">
-        硕士PDF
-      </a>
-    </div>
-  </div>
+  <section id="portfolio">
+    <h2>&#25104;&#26524;&#26597;&#30475;</h2>
+    <div id="attachment-list" class="attachment-list"></div>
+  </section>
 
-</section>
-
-</section>
+  <script src="attachments.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, "Microsoft YaHei", sans-serif;
+  color: #1f2933;
+  background: #f4f6f5;
+}
+
+#hero {
+  position: relative;
+  min-height: 74vh;
+  display: grid;
+  place-items: center;
+  padding: 96px 20px 88px;
+  text-align: center;
+  color: #fff;
+  background:
+    linear-gradient(rgba(12, 20, 26, 0.48), rgba(12, 20, 26, 0.68)),
+    url("img/open-pit-mining-hero.png") center / cover no-repeat;
+}
+
+.hero-content {
+  width: min(820px, 100%);
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #f3c36f;
+}
+
+.hero-content h1 {
+  margin: 0 0 14px;
+  font-size: clamp(36px, 6vw, 64px);
+  line-height: 1.1;
+}
+
+.subtitle {
+  margin: 0 0 22px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.desc {
+  max-width: 680px;
+  margin: 0 auto 14px;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+#portfolio {
+  width: min(1000px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0 64px;
+}
+
+#portfolio h2 {
+  margin: 0 0 28px;
+  font-size: 30px;
+}
+
+details {
+  margin-bottom: 18px;
+  padding: 18px;
+  border: 1px solid #dde3e1;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 10px 26px rgba(31, 41, 51, 0.08);
+}
+
+summary {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.attachment-description {
+  margin: 12px 0 0;
+  color: #52615b;
+  line-height: 1.7;
+}
+
+iframe {
+  width: 100%;
+  height: 640px;
+  margin-top: 16px;
+  border: 1px solid #d6ddda;
+  border-radius: 6px;
+  background: #f9fafb;
+}
+
+.download-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 9px 16px;
+  border-radius: 6px;
+  background: #244034;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.download-link:hover {
+  background: #315745;
+}
+
+@media (max-width: 680px) {
+  #hero {
+    min-height: 68vh;
+    padding: 72px 18px;
+  }
+
+  iframe {
+    height: 520px;
+  }
+}
