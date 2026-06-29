@@ -89,12 +89,21 @@ body {
 .result-item h3 {
   margin: 0;
   font-size: 20px;
+  overflow-wrap: anywhere;
 }
 
 .attachment-description {
   margin: 12px 0 0;
   color: #52615b;
   line-height: 1.7;
+}
+
+.loading-message {
+  margin: 0;
+  padding: 18px;
+  border-radius: 8px;
+  color: #fff;
+  background: rgba(12, 20, 26, 0.62);
 }
 
 .pdf-preview {

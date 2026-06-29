@@ -3,7 +3,6 @@ Personal website.
 
 ## Add a result PDF
 
-1. Put the new file in the `PDF/` folder.
-2. Open `index.html`.
-3. Copy one existing `<article class="result-item">...</article>` block.
-4. Change the title, description, `iframe src`, and button `href`.
+Put the new PDF file in the `PDF/` folder. The website reads that folder automatically and shows every PDF on the personal results page.
+
+For local preview, run a static server from this folder, then open the site in a browser.
